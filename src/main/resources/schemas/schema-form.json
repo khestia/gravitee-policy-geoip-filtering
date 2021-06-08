@@ -571,6 +571,6 @@
   },
   "required": [
     "failOnUnknown",
-    "rules"
+    "whitelistRules"
   ]
 }

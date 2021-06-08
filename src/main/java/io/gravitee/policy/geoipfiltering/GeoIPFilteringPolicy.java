@@ -54,7 +54,7 @@ public class GeoIPFilteringPolicy {
     public void onRequest(Request request, Response response, ExecutionContext context, PolicyChain policyChain) {
         Vertx vertx = context.getComponent(Vertx.class);
 
-        vertx.eventBus().send(GEOIP_SERVICE, request.remoteAddress(), new Handler<AsyncResult<Message<JsonObject>>>() {
+        vertx.eventBus().request(GEOIP_SERVICE, request.remoteAddress(), new Handler<AsyncResult<Message<JsonObject>>>() {
             @Override
             public void handle(AsyncResult<Message<JsonObject>> message) {
                 if (message.failed()) {
