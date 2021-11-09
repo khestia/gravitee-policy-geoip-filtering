@@ -117,6 +117,8 @@ workflows:
           container_size: 'large'
       - package_bundle:
           dry_run: false
+          requires:
+            - maven_n_git_release
 
   release_dry_run:
     when:
@@ -140,6 +142,9 @@ workflows:
           container_size: 'large'
       - package_bundle:
           dry_run: true
+          requires:
+            - maven_n_git_release
+
   # ---
   # CICD Workflow For APIM Orchestrated Nexus Staging, Container-based : Circle CI Docker Executor
   nexus_staging:
@@ -189,6 +194,8 @@ workflows:
           container_size: 'large'
       - package_bundle:
           dry_run: false
+          requires:
+            - maven_n_git_release
 
   standalone_release_dry_run:
     when:
@@ -212,6 +219,8 @@ workflows:
           container_size: 'large'
       - package_bundle:
           dry_run: true
+          requires:
+            - maven_n_git_release
 
   standalone_nexus_staging:
     # ---
