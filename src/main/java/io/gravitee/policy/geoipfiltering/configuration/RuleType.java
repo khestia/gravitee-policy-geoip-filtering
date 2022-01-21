@@ -20,7 +20,6 @@ package io.gravitee.policy.geoipfiltering.configuration;
  * @author GraviteeSource Team
  */
 public enum RuleType {
-
     COUNTRY,
-    DISTANCE
+    DISTANCE,
 }

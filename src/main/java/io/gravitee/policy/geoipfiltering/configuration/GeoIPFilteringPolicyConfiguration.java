@@ -16,7 +16,6 @@
 package io.gravitee.policy.geoipfiltering.configuration;
 
 import io.gravitee.policy.api.PolicyConfiguration;
-
 import java.util.List;
 
 /**
