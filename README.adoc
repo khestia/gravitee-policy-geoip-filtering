@@ -1,7 +1,11 @@
 = GeoIP filtering policy
 
-image:https://img.shields.io/badge/License-Apache%202.0-blue.svg["License", link="https://github.com/gravitee-io/gravitee-policy-geoip-filtering/blob/master/LICENSE"]
+ifdef::env-github[]
+image:https://img.shields.io/static/v1?label=Available%20at&message=Gravitee.io&color=1EC9D2["Gravitee.io", link="https://download.gravitee.io/#graviteeio-apim/plugins/policies/gravitee-policy-geoip-filtering/"]
+image:https://img.shields.io/badge/License-Apache%202.0-blue.svg["License", link="https://github.com/gravitee-io/gravitee-policy-geoip-filtering /blob/master/LICENSE.txt"]
+image:https://img.shields.io/badge/semantic--release-conventional%20commits-e10079?logo=semantic-release["Releases", link="https://github.com/gravitee-io/gravitee-policy-geoip-filtering/releases"]
 image:https://circleci.com/gh/gravitee-io/gravitee-policy-geoip-filtering.svg?style=svg["CircleCI", link="https://circleci.com/gh/gravitee-io/gravitee-policy-geoip-filtering"]
+endif::[]
 
 
 IMPORTANT: To use this policy, you must first install plugin https://download.gravitee.io/#plugins/services/[gravitee-service-geoip]
